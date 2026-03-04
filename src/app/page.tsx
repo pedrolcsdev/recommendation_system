@@ -38,7 +38,7 @@ export default function HomePage() {
 
       <section className="space-y-5">
         <SectionHeader
-          title="Favoritos da Comunidade"
+          title="Recomendados para você"
           subtitle="Os espaços mais bem avaliados para você reservar com confiança."
         />
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
