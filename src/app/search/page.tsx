@@ -7,9 +7,8 @@ import Button from '@/components/Button';
 import Input from '@/components/Input';
 import SectionHeader from '@/components/SectionHeader';
 import { SpaceCard } from '@/components/SpaceCard';
+import { parseAiQuery } from '@/lib/parseAiQuery';
 import { getAllSpaces } from '@/lib/spaces';
-
-const chips = ['Wi-Fi', 'Projetor', '20+ pessoas', 'Estacionamento'];
 
 function normalizeSearchText(value: string): string {
   return value
@@ -23,6 +22,7 @@ export default function SearchPage() {
   const [query, setQuery] = useState('');
   const [aiText, setAiText] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const aiChips = useMemo(() => parseAiQuery(aiText).tags, [aiText]);
 
   const filteredSpaces = useMemo(() => {
     const normalizedQuery = normalizeSearchText(query).trim();
@@ -58,13 +58,13 @@ export default function SearchPage() {
           <Input
             value={aiText}
             onChange={(event) => setAiText(event.target.value)}
-            placeholder="AI search (em breve)…"
+            placeholder="Descreva o espaço ideal e veja os filtros sugeridos…"
             aria-label="AI search"
           />
         </div>
 
         <div className="flex flex-wrap gap-2">
-          {chips.map((chip) => (
+          {aiChips.map((chip) => (
             <Badge key={chip}>{chip}</Badge>
           ))}
         </div>
