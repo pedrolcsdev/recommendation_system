@@ -40,7 +40,7 @@ const initialValues: FormValues = {
 };
 
 const fieldClasses =
-  'w-full rounded-lg border border-white/15 bg-[#0f121a] px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70';
+  'w-full rounded-lg border border-white/15 bg-[#0f121a] px-4 py-2.5 text-sm text-slate-100 placeholder:text-slate-500/80 transition-all duration-200 focus-visible:border-sky-300/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70';
 
 export default function PartnerNewPage() {
   const [values, setValues] = useState<FormValues>(initialValues);
@@ -52,15 +52,15 @@ export default function PartnerNewPage() {
     const nextErrors: FormErrors = {};
 
     if (!values.title.trim()) {
-      nextErrors.title = 'Informe um título.';
+      nextErrors.title = 'Informe um título para o espaço.';
     }
 
     if (!values.city.trim()) {
-      nextErrors.city = 'Informe a cidade.';
+      nextErrors.city = 'Informe a cidade do espaço.';
     }
 
     if (!values.pricePerDay.trim()) {
-      nextErrors.pricePerDay = 'Informe o preço por dia.';
+      nextErrors.pricePerDay = 'Informe o valor da diária.';
     }
 
     setErrors(nextErrors);
@@ -78,13 +78,21 @@ export default function PartnerNewPage() {
     setErrors((current) => ({ ...current, [field]: undefined }));
   }
 
+  const hasErrors = Object.keys(errors).length > 0;
+
   return (
     <section className="py-2 sm:py-4">
       <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-[#0D1017] p-5 sm:p-8">
         <header className="mb-6 space-y-1.5">
-          <h2 className="text-3xl font-semibold text-white">Novo espaço</h2>
+          <h2 className="text-2xl font-semibold text-white sm:text-3xl">Novo espaço</h2>
           <p className="text-sm text-slate-300">Preencha os dados para cadastrar seu espaço (fase UI).</p>
         </header>
+
+        {hasErrors ? (
+          <div className="mb-4 rounded-lg border border-rose-400/30 bg-rose-500/10 px-4 py-3 text-sm text-rose-200">
+            Revise os campos destacados antes de salvar.
+          </div>
+        ) : null}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1.5">
@@ -96,6 +104,7 @@ export default function PartnerNewPage() {
               value={values.title}
               onChange={(event) => updateField('title', event.target.value)}
               placeholder="Ex: Auditório corporativo premium"
+              aria-invalid={Boolean(errors.title)}
             />
             {errors.title ? <p className="text-xs text-rose-300">{errors.title}</p> : null}
           </div>
@@ -140,6 +149,7 @@ export default function PartnerNewPage() {
                 value={values.city}
                 onChange={(event) => updateField('city', event.target.value)}
                 placeholder="Ex: São Luís"
+                aria-invalid={Boolean(errors.city)}
               />
               {errors.city ? <p className="text-xs text-rose-300">{errors.city}</p> : null}
             </div>
@@ -169,6 +179,7 @@ export default function PartnerNewPage() {
                 value={values.pricePerDay}
                 onChange={(event) => updateField('pricePerDay', event.target.value)}
                 placeholder="Ex: 1200"
+                aria-invalid={Boolean(errors.pricePerDay)}
               />
               {errors.pricePerDay ? <p className="text-xs text-rose-300">{errors.pricePerDay}</p> : null}
             </div>
@@ -229,12 +240,15 @@ export default function PartnerNewPage() {
           </div>
 
           <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
-            <Link href="/partner">
-              <Button type="button" variant="secondary">
-                Cancelar
-              </Button>
+            <Link
+              href="/partner"
+              className="inline-flex min-h-10 w-full items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-200 transition-all duration-200 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70 sm:w-auto"
+            >
+              Cancelar
             </Link>
-            <Button type="submit">Salvar</Button>
+            <Button type="submit" fullWidth className="sm:w-auto">
+              Salvar
+            </Button>
           </div>
         </form>
       </div>

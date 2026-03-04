@@ -2,6 +2,8 @@
 
 import { useMemo, useRef, useState } from 'react';
 
+import Badge from '@/components/Badge';
+import Button from '@/components/Button';
 import Input from '@/components/Input';
 import SectionHeader from '@/components/SectionHeader';
 import { SpaceCard } from '@/components/SpaceCard';
@@ -63,12 +65,7 @@ export default function SearchPage() {
 
         <div className="flex flex-wrap gap-2">
           {chips.map((chip) => (
-            <span
-              key={chip}
-              className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-slate-200"
-            >
-              {chip}
-            </span>
+            <Badge key={chip}>{chip}</Badge>
           ))}
         </div>
       </div>
@@ -83,18 +80,18 @@ export default function SearchPage() {
             ))}
           </div>
         ) : (
-          <div className="rounded-2xl border border-dashed border-white/15 bg-[#0D1017] px-6 py-10 text-center">
-            <h3 className="text-lg font-semibold text-white">Nenhum espaço encontrado</h3>
-            <p className="mt-2 text-sm text-slate-300">
-              Tente buscar por outra cidade, aumentar o orçamento ou remover filtros.
+          <div className="rounded-2xl border border-dashed border-white/15 bg-gradient-to-b from-[#0D1017] to-[#101827] px-6 py-12 text-center">
+            <p className="text-4xl">🔎</p>
+            <h3 className="mt-3 text-lg font-semibold text-white sm:text-xl">Nenhum espaço encontrado</h3>
+            <p className="mx-auto mt-2 max-w-md text-sm text-slate-300">
+              Não encontramos resultados para sua busca. Tente outro termo, cidade ou limpe os filtros para
+              explorar novamente.
             </p>
-            <button
-              type="button"
-              onClick={handleClearSearch}
-              className="mt-6 inline-flex items-center justify-center rounded-lg border border-sky-500/50 bg-sky-500/15 px-4 py-2 text-sm font-medium text-sky-100 transition-all duration-200 hover:border-sky-400/70 hover:bg-sky-400/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70"
-            >
-              Limpar busca
-            </button>
+            <div className="mt-6">
+              <Button type="button" onClick={handleClearSearch}>
+                Limpar busca
+              </Button>
+            </div>
           </div>
         )}
       </div>

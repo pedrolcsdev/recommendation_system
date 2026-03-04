@@ -11,7 +11,7 @@ export default function AppShell({ children }: AppShellProps) {
   return (
     <div className="flex min-h-screen flex-col bg-[#07090D] text-white">
       <Navbar />
-      <main className="flex-1 py-10 sm:py-12">
+      <main className="flex-1 py-8 sm:py-10 md:py-12">
         <Container>{children}</Container>
       </main>
       <Footer />
