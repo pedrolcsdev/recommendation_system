@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Badge from '@/components/Badge';
+import Button from '@/components/Button';
 import { getSpaceById } from '@/lib/spaces';
 
 interface SpaceDetailsPageProps {
@@ -17,12 +18,15 @@ export default function SpaceDetailsPage({ params }: SpaceDetailsPageProps) {
 
   if (!space) {
     return (
-      <section className="mx-auto flex max-w-3xl flex-col items-center gap-4 rounded-2xl border border-white/10 bg-[#0D1017] px-6 py-14 text-center">
-        <h2 className="text-3xl font-bold text-white">Espaço não encontrado</h2>
-        <p className="text-slate-300">Verifique o link ou volte para a busca.</p>
+      <section className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-2xl border border-white/10 bg-gradient-to-b from-[#0D1017] to-[#101827] px-6 py-14 text-center">
+        <p className="text-4xl">🏢</p>
+        <h2 className="text-2xl font-bold text-white sm:text-3xl">Espaço não encontrado</h2>
+        <p className="max-w-md text-sm text-slate-300 sm:text-base">
+          Não localizamos este anúncio. Verifique o link informado ou volte para a página de busca.
+        </p>
         <Link
           href="/search"
-          className="mt-2 inline-flex items-center justify-center rounded-lg border border-sky-500/50 bg-sky-500/15 px-4 py-2 text-sm font-medium text-sky-100 transition-all duration-200 hover:border-sky-400/70 hover:bg-sky-400/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70"
+          className="mt-2 inline-flex min-h-10 items-center justify-center rounded-lg border border-sky-500/50 bg-sky-500/15 px-4 py-2.5 text-sm font-semibold text-sky-100 transition-all duration-200 hover:border-sky-400/70 hover:bg-sky-400/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70"
         >
           Voltar para busca
         </Link>
@@ -76,13 +80,15 @@ export default function SpaceDetailsPage({ params }: SpaceDetailsPageProps) {
         <div className="space-y-6 rounded-2xl border border-white/10 bg-[#0D1017] p-5 sm:p-6">
           <div className="space-y-3">
             <div className="flex flex-wrap items-center gap-3">
-              <h1 className="text-3xl font-bold text-white">{space.title}</h1>
+              <h1 className="text-2xl font-bold text-white sm:text-3xl">{space.title}</h1>
               <span className="rounded-full border border-sky-500/30 bg-sky-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-sky-200">
                 {space.partner}
               </span>
             </div>
 
-            <p className="text-sm text-slate-300">{space.city} • {space.address}</p>
+            <p className="text-sm text-slate-300">
+              {space.city} • {space.address}
+            </p>
             <p className="text-sm text-slate-200">
               ⭐ {space.rating.toFixed(1)} ({space.reviewsCount} reviews)
             </p>
@@ -117,13 +123,14 @@ export default function SpaceDetailsPage({ params }: SpaceDetailsPageProps) {
             </div>
           </div>
 
-          <button
+          <Button
             type="button"
             onClick={() => alert('Reserva (fake) — fase 1')}
-            className="inline-flex w-full items-center justify-center rounded-lg border border-sky-500/60 bg-sky-500/20 px-4 py-3 text-sm font-semibold text-sky-100 transition-all duration-200 hover:border-sky-400/80 hover:bg-sky-400/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70"
+            fullWidth
+            className="py-3"
           >
             Reservar
-          </button>
+          </Button>
         </div>
       </div>
     </section>
