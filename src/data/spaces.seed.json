@@ -1,0 +1,639 @@
+[
+  {
+    "id": "spc_001",
+    "title": "Sala Criativa 1",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "São Luís",
+    "address": "Av. Holandeses, 101",
+    "pricePerDay": 120,
+    "capacity": 6,
+    "areaM2": 18,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_001-1/1200/800",
+      "https://picsum.photos/seed/spc_001-2/1200/800",
+      "https://picsum.photos/seed/spc_001-3/1200/800",
+      "https://picsum.photos/seed/spc_001-4/1200/800"
+    ],
+    "rating": 3.6,
+    "reviewsCount": 12
+  },
+  {
+    "id": "spc_002",
+    "title": "Auditório Modular 2",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "São Luís",
+    "address": "Av. Daniel de La Touche, 102",
+    "pricePerDay": 155,
+    "capacity": 10,
+    "areaM2": 25,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_002-1/1200/800",
+      "https://picsum.photos/seed/spc_002-2/1200/800",
+      "https://picsum.photos/seed/spc_002-3/1200/800"
+    ],
+    "rating": 4.3,
+    "reviewsCount": 21
+  },
+  {
+    "id": "spc_003",
+    "title": "Coworking Aurora 3",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "São Luís",
+    "address": "Av. Jerônimo de Albuquerque, 103",
+    "pricePerDay": 190,
+    "capacity": 14,
+    "areaM2": 32,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_003-1/1200/800",
+      "https://picsum.photos/seed/spc_003-2/1200/800",
+      "https://picsum.photos/seed/spc_003-3/1200/800",
+      "https://picsum.photos/seed/spc_003-4/1200/800"
+    ],
+    "rating": 5.0,
+    "reviewsCount": 30
+  },
+  {
+    "id": "spc_004",
+    "title": "Estúdio Multiuso 4",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "São José de Ribamar",
+    "address": "Av. Litorânea, 104",
+    "pricePerDay": 225,
+    "capacity": 18,
+    "areaM2": 39,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_004-1/1200/800",
+      "https://picsum.photos/seed/spc_004-2/1200/800",
+      "https://picsum.photos/seed/spc_004-3/1200/800"
+    ],
+    "rating": 4.2,
+    "reviewsCount": 39
+  },
+  {
+    "id": "spc_005",
+    "title": "Sala de Reunião Atlântico 5",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "Paço do Lumiar",
+    "address": "Av. Guajajaras, 105",
+    "pricePerDay": 260,
+    "capacity": 22,
+    "areaM2": 46,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_005-1/1200/800",
+      "https://picsum.photos/seed/spc_005-2/1200/800",
+      "https://picsum.photos/seed/spc_005-3/1200/800",
+      "https://picsum.photos/seed/spc_005-4/1200/800"
+    ],
+    "rating": 4.9,
+    "reviewsCount": 48
+  },
+  {
+    "id": "spc_006",
+    "title": "Espaço Colab Centro 6",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "Imperatriz",
+    "address": "Av. Holandeses, 106",
+    "pricePerDay": 295,
+    "capacity": 26,
+    "areaM2": 53,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_006-1/1200/800",
+      "https://picsum.photos/seed/spc_006-2/1200/800",
+      "https://picsum.photos/seed/spc_006-3/1200/800"
+    ],
+    "rating": 4.1,
+    "reviewsCount": 57
+  },
+  {
+    "id": "spc_007",
+    "title": "Hub Inovação 7",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "Caxias",
+    "address": "Av. Daniel de La Touche, 107",
+    "pricePerDay": 330,
+    "capacity": 30,
+    "areaM2": 60,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_007-1/1200/800",
+      "https://picsum.photos/seed/spc_007-2/1200/800",
+      "https://picsum.photos/seed/spc_007-3/1200/800",
+      "https://picsum.photos/seed/spc_007-4/1200/800"
+    ],
+    "rating": 4.8,
+    "reviewsCount": 66
+  },
+  {
+    "id": "spc_008",
+    "title": "Sala Panorama 8",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "Timon",
+    "address": "Av. Jerônimo de Albuquerque, 108",
+    "pricePerDay": 365,
+    "capacity": 34,
+    "areaM2": 67,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_008-1/1200/800",
+      "https://picsum.photos/seed/spc_008-2/1200/800",
+      "https://picsum.photos/seed/spc_008-3/1200/800"
+    ],
+    "rating": 4.0,
+    "reviewsCount": 75
+  },
+  {
+    "id": "spc_009",
+    "title": "Loft Corporativo 9",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "Bacabal",
+    "address": "Av. Litorânea, 109",
+    "pricePerDay": 140,
+    "capacity": 38,
+    "areaM2": 74,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_009-1/1200/800",
+      "https://picsum.photos/seed/spc_009-2/1200/800",
+      "https://picsum.photos/seed/spc_009-3/1200/800",
+      "https://picsum.photos/seed/spc_009-4/1200/800"
+    ],
+    "rating": 4.7,
+    "reviewsCount": 84
+  },
+  {
+    "id": "spc_010",
+    "title": "Arena Treinamento 10",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "Balsas",
+    "address": "Av. Guajajaras, 110",
+    "pricePerDay": 175,
+    "capacity": 42,
+    "areaM2": 18,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_010-1/1200/800",
+      "https://picsum.photos/seed/spc_010-2/1200/800",
+      "https://picsum.photos/seed/spc_010-3/1200/800"
+    ],
+    "rating": 3.9,
+    "reviewsCount": 93
+  },
+  {
+    "id": "spc_011",
+    "title": "Sala Start 11",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "São Luís",
+    "address": "Av. Holandeses, 111",
+    "pricePerDay": 210,
+    "capacity": 6,
+    "areaM2": 25,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_011-1/1200/800",
+      "https://picsum.photos/seed/spc_011-2/1200/800",
+      "https://picsum.photos/seed/spc_011-3/1200/800",
+      "https://picsum.photos/seed/spc_011-4/1200/800"
+    ],
+    "rating": 4.6,
+    "reviewsCount": 102
+  },
+  {
+    "id": "spc_012",
+    "title": "Conecta Norte 12",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "São Luís",
+    "address": "Av. Daniel de La Touche, 112",
+    "pricePerDay": 245,
+    "capacity": 10,
+    "areaM2": 32,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_012-1/1200/800",
+      "https://picsum.photos/seed/spc_012-2/1200/800",
+      "https://picsum.photos/seed/spc_012-3/1200/800"
+    ],
+    "rating": 3.8,
+    "reviewsCount": 111
+  },
+  {
+    "id": "spc_013",
+    "title": "Meeting Point 13",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "São Luís",
+    "address": "Av. Jerônimo de Albuquerque, 113",
+    "pricePerDay": 280,
+    "capacity": 14,
+    "areaM2": 39,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_013-1/1200/800",
+      "https://picsum.photos/seed/spc_013-2/1200/800",
+      "https://picsum.photos/seed/spc_013-3/1200/800",
+      "https://picsum.photos/seed/spc_013-4/1200/800"
+    ],
+    "rating": 4.5,
+    "reviewsCount": 120
+  },
+  {
+    "id": "spc_014",
+    "title": "Laboratório Ideias 14",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "São José de Ribamar",
+    "address": "Av. Litorânea, 114",
+    "pricePerDay": 315,
+    "capacity": 18,
+    "areaM2": 46,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_014-1/1200/800",
+      "https://picsum.photos/seed/spc_014-2/1200/800",
+      "https://picsum.photos/seed/spc_014-3/1200/800"
+    ],
+    "rating": 3.7,
+    "reviewsCount": 129
+  },
+  {
+    "id": "spc_015",
+    "title": "Espaço Versátil 15",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "Paço do Lumiar",
+    "address": "Av. Guajajaras, 115",
+    "pricePerDay": 350,
+    "capacity": 22,
+    "areaM2": 53,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_015-1/1200/800",
+      "https://picsum.photos/seed/spc_015-2/1200/800",
+      "https://picsum.photos/seed/spc_015-3/1200/800",
+      "https://picsum.photos/seed/spc_015-4/1200/800"
+    ],
+    "rating": 4.4,
+    "reviewsCount": 138
+  },
+  {
+    "id": "spc_016",
+    "title": "Sala Maré 16",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "Imperatriz",
+    "address": "Av. Holandeses, 116",
+    "pricePerDay": 385,
+    "capacity": 26,
+    "areaM2": 60,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_016-1/1200/800",
+      "https://picsum.photos/seed/spc_016-2/1200/800",
+      "https://picsum.photos/seed/spc_016-3/1200/800"
+    ],
+    "rating": 3.6,
+    "reviewsCount": 147
+  },
+  {
+    "id": "spc_017",
+    "title": "Núcleo Executivo 17",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "Caxias",
+    "address": "Av. Daniel de La Touche, 117",
+    "pricePerDay": 160,
+    "capacity": 30,
+    "areaM2": 67,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_017-1/1200/800",
+      "https://picsum.photos/seed/spc_017-2/1200/800",
+      "https://picsum.photos/seed/spc_017-3/1200/800",
+      "https://picsum.photos/seed/spc_017-4/1200/800"
+    ],
+    "rating": 4.3,
+    "reviewsCount": 156
+  },
+  {
+    "id": "spc_018",
+    "title": "Open Office 18",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "Timon",
+    "address": "Av. Jerônimo de Albuquerque, 118",
+    "pricePerDay": 195,
+    "capacity": 34,
+    "areaM2": 74,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_018-1/1200/800",
+      "https://picsum.photos/seed/spc_018-2/1200/800",
+      "https://picsum.photos/seed/spc_018-3/1200/800"
+    ],
+    "rating": 5.0,
+    "reviewsCount": 165
+  },
+  {
+    "id": "spc_019",
+    "title": "Pátio Tech 19",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "Bacabal",
+    "address": "Av. Litorânea, 119",
+    "pricePerDay": 230,
+    "capacity": 38,
+    "areaM2": 18,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_019-1/1200/800",
+      "https://picsum.photos/seed/spc_019-2/1200/800",
+      "https://picsum.photos/seed/spc_019-3/1200/800",
+      "https://picsum.photos/seed/spc_019-4/1200/800"
+    ],
+    "rating": 4.2,
+    "reviewsCount": 174
+  },
+  {
+    "id": "spc_020",
+    "title": "Sala Prisma 20",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "Balsas",
+    "address": "Av. Guajajaras, 120",
+    "pricePerDay": 265,
+    "capacity": 42,
+    "areaM2": 25,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_020-1/1200/800",
+      "https://picsum.photos/seed/spc_020-2/1200/800",
+      "https://picsum.photos/seed/spc_020-3/1200/800"
+    ],
+    "rating": 4.9,
+    "reviewsCount": 183
+  },
+  {
+    "id": "spc_021",
+    "title": "Espaço Horizonte 21",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "São Luís",
+    "address": "Av. Holandeses, 121",
+    "pricePerDay": 300,
+    "capacity": 6,
+    "areaM2": 32,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_021-1/1200/800",
+      "https://picsum.photos/seed/spc_021-2/1200/800",
+      "https://picsum.photos/seed/spc_021-3/1200/800",
+      "https://picsum.photos/seed/spc_021-4/1200/800"
+    ],
+    "rating": 4.1,
+    "reviewsCount": 192
+  },
+  {
+    "id": "spc_022",
+    "title": "Sala Integra 22",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "São Luís",
+    "address": "Av. Daniel de La Touche, 122",
+    "pricePerDay": 335,
+    "capacity": 10,
+    "areaM2": 39,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_022-1/1200/800",
+      "https://picsum.photos/seed/spc_022-2/1200/800",
+      "https://picsum.photos/seed/spc_022-3/1200/800"
+    ],
+    "rating": 4.8,
+    "reviewsCount": 201
+  },
+  {
+    "id": "spc_023",
+    "title": "Coworking Beira-Mar 23",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Ceuma",
+    "city": "São Luís",
+    "address": "Av. Jerônimo de Albuquerque, 123",
+    "pricePerDay": 370,
+    "capacity": 14,
+    "areaM2": 46,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_023-1/1200/800",
+      "https://picsum.photos/seed/spc_023-2/1200/800",
+      "https://picsum.photos/seed/spc_023-3/1200/800",
+      "https://picsum.photos/seed/spc_023-4/1200/800"
+    ],
+    "rating": 4.0,
+    "reviewsCount": 210
+  },
+  {
+    "id": "spc_024",
+    "title": "Sala Delta 24",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "IoA",
+    "city": "São José de Ribamar",
+    "address": "Av. Litorânea, 124",
+    "pricePerDay": 405,
+    "capacity": 18,
+    "areaM2": 53,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor",
+      "ar-condicionado",
+      "estacionamento"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_024-1/1200/800",
+      "https://picsum.photos/seed/spc_024-2/1200/800",
+      "https://picsum.photos/seed/spc_024-3/1200/800"
+    ],
+    "rating": 4.7,
+    "reviewsCount": 219
+  },
+  {
+    "id": "spc_025",
+    "title": "Estação Colaborativa 25",
+    "description": "Ambiente preparado para reuniões, workshops e eventos corporativos, com layout flexível e infraestrutura completa para times de diferentes tamanhos.",
+    "partner": "Oxygeni",
+    "city": "Paço do Lumiar",
+    "address": "Av. Guajajaras, 125",
+    "pricePerDay": 180,
+    "capacity": 22,
+    "areaM2": 60,
+    "amenities": [
+      "wifi",
+      "cadeiras",
+      "mesas",
+      "projetor"
+    ],
+    "images": [
+      "https://picsum.photos/seed/spc_025-1/1200/800",
+      "https://picsum.photos/seed/spc_025-2/1200/800",
+      "https://picsum.photos/seed/spc_025-3/1200/800",
+      "https://picsum.photos/seed/spc_025-4/1200/800"
+    ],
+    "rating": 3.9,
+    "reviewsCount": 228
+  }
+]
