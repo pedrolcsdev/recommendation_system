@@ -1,3 +1,5 @@
+import { normalizeText } from '@/lib/utils';
+
 const MEETING_KEYWORDS = [
   'reuniao',
   'meeting',
@@ -11,13 +13,6 @@ const MEETING_KEYWORDS = [
 const WIFI_REGEX = /\b(wi\s*-?\s*fi|wifi|internet)\b/;
 const AIR_CONDITIONING_REGEX = /\b(ar\s*-?\s*condicionado|ac)\b/;
 const CAPACITY_REGEX = /\b(\d+)\s*(pessoas?|people|guests)\b/;
-
-function normalizeText(value: string): string {
-  return value
-    .toLocaleLowerCase('pt-BR')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
-}
 
 export function parseAiQuery(query: string): { tags: string[] } {
   const normalizedQuery = normalizeText(query);

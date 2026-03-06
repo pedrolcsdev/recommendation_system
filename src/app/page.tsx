@@ -1,14 +1,7 @@
-import Link from 'next/link';
-
+import ActionLink from '@/components/ActionLink';
 import SectionHeader from '@/components/SectionHeader';
 import { SpaceCard } from '@/components/SpaceCard';
 import { getTopRatedSpaces, groupSpacesByPartner } from '@/lib/spaces';
-
-const primaryLinkClasses =
-  'inline-flex min-h-10 items-center justify-center rounded-lg border border-sky-500/50 bg-sky-500/15 px-5 py-2.5 text-sm font-semibold text-sky-100 transition-all duration-200 hover:border-sky-400/70 hover:bg-sky-400/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70';
-
-const secondaryLinkClasses =
-  'inline-flex min-h-10 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-semibold text-slate-200 transition-all duration-200 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70';
 
 export default function HomePage() {
   const topRatedSpaces = getTopRatedSpaces(6);
@@ -26,12 +19,10 @@ export default function HomePage() {
             premium em um só lugar.
           </p>
           <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
-            <Link href="/search" className={primaryLinkClasses}>
-              Buscar espaços
-            </Link>
-            <Link href="/partner/new" className={secondaryLinkClasses}>
+            <ActionLink href="/search">Buscar espaços</ActionLink>
+            <ActionLink href="/partner/new" variant="secondary">
               Anunciar espaço
-            </Link>
+            </ActionLink>
           </div>
         </div>
       </section>

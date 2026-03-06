@@ -1,5 +1,7 @@
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
+import { cn } from '@/lib/utils';
+
 type ButtonVariant = 'primary' | 'secondary';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -25,10 +27,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button
-      className={`${baseClasses} ${variantClasses[variant]} ${fullWidth ? 'w-full' : ''} ${className}`.trim()}
-      {...props}
-    >
+    <button className={cn(baseClasses, variantClasses[variant], fullWidth && 'w-full', className)} {...props}>
       {children}
     </button>
   );

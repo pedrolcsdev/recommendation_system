@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import ActionLink from '@/components/ActionLink';
 import Badge from '@/components/Badge';
 import Button from '@/components/Button';
 import { getSpaceById } from '@/lib/spaces';
@@ -24,12 +25,9 @@ export default function SpaceDetailsPage({ params }: SpaceDetailsPageProps) {
         <p className="max-w-md text-sm text-slate-300 sm:text-base">
           Não localizamos este anúncio. Verifique o link informado ou volte para a página de busca.
         </p>
-        <Link
-          href="/search"
-          className="mt-2 inline-flex min-h-10 items-center justify-center rounded-lg border border-sky-500/50 bg-sky-500/15 px-4 py-2.5 text-sm font-semibold text-sky-100 transition-all duration-200 hover:border-sky-400/70 hover:bg-sky-400/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70"
-        >
+        <ActionLink href="/search" className="mt-2">
           Voltar para busca
-        </Link>
+        </ActionLink>
       </section>
     );
   }
