@@ -1,8 +1,8 @@
 'use client';
 
-import Link from 'next/link';
 import { type FormEvent, useState } from 'react';
 
+import ActionLink from '@/components/ActionLink';
 import Button from '@/components/Button';
 import Input from '@/components/Input';
 import type { Partner } from '@/lib/types';
@@ -26,6 +26,8 @@ type FormErrors = {
   pricePerDay?: string;
 };
 
+const partnerOptions: Partner[] = ['Oxygeni', 'Ceuma', 'IoA'];
+
 const initialValues: FormValues = {
   title: '',
   description: '',
@@ -45,6 +47,8 @@ const fieldClasses =
 export default function PartnerNewPage() {
   const [values, setValues] = useState<FormValues>(initialValues);
   const [errors, setErrors] = useState<FormErrors>({});
+
+  const hasErrors = Object.keys(errors).length > 0;
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -77,8 +81,6 @@ export default function PartnerNewPage() {
     setValues((current) => ({ ...current, [field]: value }));
     setErrors((current) => ({ ...current, [field]: undefined }));
   }
-
-  const hasErrors = Object.keys(errors).length > 0;
 
   return (
     <section className="py-2 sm:py-4">
@@ -134,9 +136,11 @@ export default function PartnerNewPage() {
                 onChange={(event) => updateField('partner', event.target.value as Partner)}
                 className={fieldClasses}
               >
-                <option value="Oxygeni">Oxygeni</option>
-                <option value="Ceuma">Ceuma</option>
-                <option value="IoA">IoA</option>
+                {partnerOptions.map((partner) => (
+                  <option key={partner} value={partner}>
+                    {partner}
+                  </option>
+                ))}
               </select>
             </div>
 
@@ -240,12 +244,9 @@ export default function PartnerNewPage() {
           </div>
 
           <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:justify-end">
-            <Link
-              href="/partner"
-              className="inline-flex min-h-10 w-full items-center justify-center rounded-lg border border-white/15 bg-white/5 px-4 py-2.5 text-sm font-semibold text-slate-200 transition-all duration-200 hover:border-white/25 hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400/70 sm:w-auto"
-            >
+            <ActionLink href="/partner" variant="secondary" className="w-full sm:w-auto">
               Cancelar
-            </Link>
+            </ActionLink>
             <Button type="submit" fullWidth className="sm:w-auto">
               Salvar
             </Button>

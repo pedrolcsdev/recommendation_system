@@ -9,12 +9,10 @@ import SectionHeader from '@/components/SectionHeader';
 import { SpaceCard } from '@/components/SpaceCard';
 import { parseAiQuery } from '@/lib/parseAiQuery';
 import { getAllSpaces } from '@/lib/spaces';
+import { normalizeText } from '@/lib/utils';
 
-function normalizeSearchText(value: string): string {
-  return value
-    .toLocaleLowerCase('pt-BR')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
+function getSearchableText(title: string, description: string, city: string): string {
+  return normalizeText(`${title} ${description} ${city}`);
 }
 
 export default function SearchPage() {
@@ -22,19 +20,19 @@ export default function SearchPage() {
   const [query, setQuery] = useState('');
   const [aiText, setAiText] = useState('');
   const searchInputRef = useRef<HTMLInputElement>(null);
+
   const aiChips = useMemo(() => parseAiQuery(aiText).tags, [aiText]);
 
   const filteredSpaces = useMemo(() => {
-    const normalizedQuery = normalizeSearchText(query).trim();
+    const normalizedQuery = normalizeText(query).trim();
 
     if (!normalizedQuery) {
       return spaces;
     }
 
-    return spaces.filter((space) => {
-      const searchableText = normalizeSearchText(`${space.title} ${space.description} ${space.city}`);
-      return searchableText.includes(normalizedQuery);
-    });
+    return spaces.filter((space) =>
+      getSearchableText(space.title, space.description, space.city).includes(normalizedQuery),
+    );
   }, [query, spaces]);
 
   function handleClearSearch() {
